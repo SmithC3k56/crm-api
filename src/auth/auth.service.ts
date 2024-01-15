@@ -34,7 +34,4 @@ export class AuthService {
   }
 
 
-  // async signIn(username: string, password: string): Promise<any> {
-  // const user = await this.userService.findOne(username);
-  // }
 }
