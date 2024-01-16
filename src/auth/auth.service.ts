@@ -28,7 +28,7 @@ export class AuthService {
 
     const token = this.jwtService.sign({ id: user.id });
 
-    return token;
+    return { token };
   }
 
   async signin(signinDto: SignInDto): Promise<{ token: string }> {
@@ -51,5 +51,4 @@ export class AuthService {
 
     return { token };
   }
-  
 }
